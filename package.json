@@ -1,0 +1,42 @@
+{
+  "name": "PaginationGraphQL",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-community/netinfo": "^3.2.1",
+    "apollo-boost": "^0.4.3",
+    "graphql": "^14.3.1",
+    "native-base": "^2.12.1",
+    "node-fetch": "^2.6.0",
+    "prop-types": "^15.7.2",
+    "react": "16.8.3",
+    "react-apollo": "^2.5.8",
+    "react-native": "0.59.9",
+    "react-native-vector-icons": "^6.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "babel-preset-react-native": "^4.0.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "jest-react-native": "^18.0.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "/node_modules/(?!native-base)/",
+      "/node_modules/(?!@babel)/"
+    ]
+  }
+}
