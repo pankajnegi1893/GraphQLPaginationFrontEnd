@@ -1,9 +1,13 @@
+import 'react-native';
 import React from 'react';
 import Booking from './Booking';
 
 import renderer from 'react-test-renderer';
 
 import Apis from '../../../graphql/Apis';
+import NetInfo from "@react-native-community/netinfo";
+
+jest.mock('@react-native-community/netinfo', () => 'NetInfo');
 
 it('renders without crashing', async() => {
   const rendered = await renderer.create(<Booking/>).toJSON();

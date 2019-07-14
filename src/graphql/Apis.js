@@ -3,7 +3,7 @@ import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
 
 const client = new ApolloClient({
-    uri: "http://192.168.0.4:3000/graphql",
+    uri: "http://XXX.XX.XX.XXX:3000/graphql",
     fetch: fetch
 });
   
